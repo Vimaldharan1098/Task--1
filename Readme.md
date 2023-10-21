@@ -1,0 +1,1 @@
+Difference between HTTP1.1 and HTTP2 and objects and its internal representation in Javascript
