@@ -1,0 +1,23 @@
+Write a blog about objects and its internal representation in Javascript
+
+Answer:
+
+JavaScript, objects are the backbone of the language, enabling developers to create, manipulate, and structure data in a versatile and 
+dynamic manner
+
+JavaScript object is a collection of key-value pairs, where each key is a string (or a symbol) that maps to a value. These values can be of any 
+data type, including numbers, strings, arrays, objects, functions. Objects in JavaScript can be created using various methods, including 
+object literals, constructor functions, and classes.
+
+Internal Representation of Objects
+To understand how JavaScript handles objects internally, let's explore two crucial concepts: reference and memory management.
+
+Reference
+JavaScript, when you create an object and assign it to a variable, what you're actually storing in that variable is a reference to the object's 
+location in memory. This means that multiple variables can point to the same object, allowing for efficient memory usage and data manipulation. 
+However, it's essential to note that primitive values are stored directly in variables, whereas objects are stored by reference
+
+Memory Management
+JavaScript engines utilize a process called garbage collection to manage memory. Garbage collection automatically identifies and recycles memory 
+that is no longer in use, ensuring optimal memory usage and preventing memory leaks. When an object is no longer reachable it becomes eligible for 
+garbage collection, freeing up memory for other operations

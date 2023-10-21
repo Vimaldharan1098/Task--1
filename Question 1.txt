@@ -1,0 +1,34 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+Answer:
+HTTP1.1
+HTTP1.1, introduced in 1999, revolutionized the way data is transmitted between clients and servers. Despite its groundbreaking nature at the 
+time,it has its limitations, particularly when it comes to handling modern web demands. 
+
+Key characteristics of HTTP1.1:
+Persistent Connections: In HTTP1.1, persistent connections were introduced to reuse a single connection for multiple requests and responses, and
+this still led to head-of-line blocking, where one slow request could delay others in the pipeline.
+
+Resource Bundling: To reduce the overhead of multiple requests, developers often bundled resources like scripts and stylesheets into a single 
+file and helped mitigate the number of requests, it led to inefficiencies and decreased cacheability.
+
+Blocking and Prioritization: Browsers could only fetch resources in a serial manner, causing delays when a higher-priority resource was 
+held up by a lower-priority one.
+
+HTTP2
+Introduced in 2015, HTTP2 aimed to address the shortcomings of its predecessor and deliver a more efficient and responsive web experience. 
+
+Key features of HTTP2:
+Multiplexing: One of the most significant improvements is multiplexing, which allows multiple requests and responses to be sent over a single 
+connection simultaneously. This eliminates head-of-line blocking and significantly improves page loading times.
+
+Binary Protocol: HTTP2 employs a binary framing layer instead of the text-based protocol of HTTP1.1. This results in more 
+efficient parsing and reduced overhead, enhancing overall performance
+
+Header Compression: HTTP2 employs HPACK, a header compression algorithm, to reduce the size of headers. This helps conserve bandwidth 
+and speeds up page loading
+
+Server Push: HTTP2 introduces server push, which enables the server to proactively send resources to the client before they are requested.
+This reduces the need for additional round-trip requests and accelerates page rendering
+
+Prioritization: HTTP/2 allows developers to assign priorities to resources, ensuring that higher-priority resources are fetched and loaded before 
+lower-priority ones. This improves the overall user experience
